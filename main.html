@@ -10,11 +10,26 @@
         body {
             text-align: center;
             color: #FFFFFF;
-            background: #58C2F4;
+            background: #424242;
         }
     </style>
 </head>
 <body>
-  <font>пока пусто...</font>
+    <font>какой твой любимый цвет?</font>
+    <select name="tselect" id="themeselect" onchange="SaveSelectValue(this)">
+        <option value="black">Чёрный</option>
+        <option value="red">Красный</option>
+        <option value="orange">Оранжевый</option>
+        <option value="yellow">Жёлтый</option>
+        <option value="green">Зелёный</option>
+        <option value="blue">Голубой</option>
+        <option value="violet">Фиолетовый</option>
+        <option value="pink">Розовый</option>
+    </select>
+    <script>
+        function SaveSelectValue(el) {
+            localStorage.setItem(el.name, el.value);
+        }
+    </script>
 </body>
 </html>
