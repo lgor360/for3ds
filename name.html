@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="/for3ds/s.js"></script>
+    <title>сайт веселья :3</title>
+    <linkrel="icon" href="favicon.png" type="image/x-icon">
+    <style>
+        body {
+            text-align: center;
+            color: #FFFFFF;
+            background: #424242;
+        }
+    </style>
+</head>
+<body>
+    <script>
+      function load() {
+        alert("привет! это моя игра на html!");
+        alert("я не знаю на каком языке можно делать игры чтобы их можно было потом установить как прогу на 3ds... я уже пробывал LOVE или же Love2D, но у меня не получилось... так что я буду использовать html!");
+      }
+      function hi() {
+        const name = prompt('для начала введи свой никнейм');
+        if (name) {
+          let hi = "прикольный ник, " += name
+          alert(hi);
+        } else {
+          alert("ты ничего не ввёл!");
+          hi();
+        }
+      }
+      window.onload = load();
+    </script>
+</body>
+</html>
