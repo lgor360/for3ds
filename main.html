@@ -16,7 +16,7 @@
 </head>
 <body>
     <font>какой твой любимый цвет?</font>
-    <select name="thselect" id="themeselect">
+    <select name="cselect" id="catselect" onchange="ccat()">
         <option value="black.png">Чёрный</option>
         <option value="red.png">Красный</option>
         <option value="orange.png">Оранжевый</option>
@@ -28,10 +28,11 @@
     </select>
     <img id="cat" src="igor360website/black.png">
     <script>
-        function changeImage() {
+        function ccat() {
             const cat = document.getElementById('cat');
-            var imgsrc = "/igor360website/"
-            cat.src = 'new-image.jpg';
+            var NSS = document.getElementById("catselect").value;
+            var imgsrc = "/igor360website/" += NSS
+            cat.src = imgsrc;
         }
     </script>
 </body>
