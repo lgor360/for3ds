@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="/for3ds/s.js"></script>
+    <!-- <script type="text/javascript" src="/for3ds/s.js"></script> -->
     <title>сайт веселья :3</title>
     <linkrel="icon" href="favicon.png" type="image/x-icon">
     <style>
@@ -17,19 +17,20 @@
 <body>
     <font>какой твой любимый цвет?</font>
     <select name="thselect" id="themeselect">
-        <option value="black">Чёрный</option>
-        <option value="red">Красный</option>
-        <option value="orange">Оранжевый</option>
-        <option value="yellow">Жёлтый</option>
-        <option value="green">Зелёный</option>
-        <option value="blue">Голубой</option>
-        <option value="violet">Фиолетовый</option>
-        <option value="pink">Розовый</option>
+        <option value="black.png">Чёрный</option>
+        <option value="red.png">Красный</option>
+        <option value="orange.png">Оранжевый</option>
+        <option value="yellow.png">Жёлтый</option>
+        <option value="green.png">Зелёный</option>
+        <option value="blue.png">Голубой</option>
+        <option value="purple.png">Фиолетовый</option>
+        <option value="pink.png">Розовый</option>
     </select>
     <img id="cat" src="igor360website/black.png">
     <script>
         function changeImage() {
             const cat = document.getElementById('cat');
+            var imgsrc = "/igor360website/"
             cat.src = 'new-image.jpg';
         }
     </script>
