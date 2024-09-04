@@ -17,6 +17,7 @@
 <body>
     <font>какой твой любимый цвет?</font>
     <select name="thselect" id="themeselect">
+        <option value="black">Чёрный</option>
         <option value="red">Красный</option>
         <option value="orange">Оранжевый</option>
         <option value="yellow">Жёлтый</option>
@@ -25,7 +26,12 @@
         <option value="violet">Фиолетовый</option>
         <option value="pink">Розовый</option>
     </select>
+    <img id="cat" src="igor360website/black.png">
     <script>
+        function changeImage() {
+            const cat = document.getElementById('cat');
+            cat.src = 'new-image.jpg';
+        }
     </script>
 </body>
 </html>
